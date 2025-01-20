@@ -12,15 +12,15 @@ const saludar2 = (nombre) => {
 const saludar3 = (nombre) => `Hola, ${nombre}`;
 const saludar4 = () => `Hola Mundo`;
 
-console.log(saludar("Goku"));
-console.log(saludar2("Vegeta"));
-console.log(saludar3("Gohan"));
+console.log(saludar('Goku'));
+console.log(saludar2('Vegeta'));
+console.log(saludar3('Gohan'));
 console.log(saludar4());
 
 // Funcion que retorna un objeto
 const getUser = () => ({
-  uid: "ABC123",
-  username: "El_Papi1502",
+  uid: 'ABC123',
+  username: 'El_Papi1502',
 });
 
 const user = getUser();
@@ -33,21 +33,21 @@ console.log(user);
 // 3. Pruebas
 function getUsuarioActivo(nombre) {
   return {
-    uid: "ABC567",
+    uid: 'ABC567',
     username: nombre,
   };
 }
 
-const usuarioActivo = getUsuarioActivo("Fernando");
+const usuarioActivo = getUsuarioActivo('Fernando');
 
 console.log(usuarioActivo);
 
 // Resultado esperado de la Tarea
 const getUsuarioActivoMejorado = (nombre) => ({
-  uid: "ABC567",
+  uid: 'ABC567',
   username: nombre,
 });
 
-const usuarioActivoMejorado = getUsuarioActivoMejorado("Fernando");
+const usuarioActivoMejorado = getUsuarioActivoMejorado('Fernando');
 
 console.log(usuarioActivoMejorado);
